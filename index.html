@@ -6,6 +6,7 @@
     <title>English Soul</title>
     <link rel="stylesheet" href="assets/css/styles_header.css">
     <link rel="stylesheet" href="assets/css/styles_index.css">
+    <link rel="stylesheet" href="assets/css/styles_footer.css">
 </head>
 <body>
     <div class="header__background">
@@ -34,9 +35,9 @@
                         как для детей, так и для взрослых!
                     </p>
                     <p class="welcome__sale">Первое занятие - <b>БЕСПЛАТНО!</b></p>
-                    <button class="welcome__button">Записаться</button>
+                    <button class="welcome__button" onclick="window.location.href='#lesson'">Записаться</button>
                 </div>
-                <img src="assets/img/welcome-pic.png" alt="welcome-banner" class="welcome__pic">
+                <img src="assets/img/welcome-pic.jpg" alt="welcome-banner" class="welcome__pic">
             </div>
         </section>
         <section class="britain">
@@ -52,13 +53,13 @@
                 </div>
             </div>
         </section>
-        <section class="lesson">
+        <section class="lesson" id="lesson">
             <div class="lesson__container">
                 <div class="lesson__window">
                     <h3 class="lesson__window_h3">ХОТИТЕ ЗАПИСАТЬСЯ НА ЗАНЯТИЕ?</h3>
                     <p class="lesson__window_info">Оставьте заявку и мы обязательно с Вами свяжемся!</p>
                     <img src="assets/img/lesson-cat.png" alt="british-cat" class="lesson__window_pic">
-                    <button class="welcome__button">Записаться</button>
+                    <button class="welcome__button" onclick="window.open('projects.html', '_blank')">Записаться</button>
                 </div>
             </div>
         </section>
@@ -78,18 +79,18 @@
             <div class="footer__info_box">
                 <h4 class="footer__heading">Услуги:</h4>
                 <ul class="footer__details">
-                    <li class="footer__details_item"><a href="projects.html">Английский для детей</a></li>
-                    <li class="footer__details_item"><a href="projects.html">Английский для взрослых</a></li>
-                    <li class="footer__details_item"><a href="projects.html">Деловой английский</a></li>
+                    <li class="footer__details_item"><a href="projects.html" class="footer__link">Английский для детей</a></li>
+                    <li class="footer__details_item"><a href="projects.html" class="footer__link">Английский для взрослых</a></li>
+                    <li class="footer__details_item"><a href="projects.html" class="footer__link">Деловой английский</a></li>
                 </ul>
             </div>
             <div class="footer__info_box">
                 <h4 class="footer__heading">Меню</h4>
                 <ul class="footer__details">
-                    <li class="footer__details_item"><a href="index.html">Главная</a></li>
-                    <li class="footer__details_item"><a href="about.html">О нас</a></li>
-                    <li class="footer__details_item"><a href="projects.html">Услуги</a></li>
-                    <li class="footer__details_item"><a href="contact.html">Обратная связь</a</li>
+                    <li class="footer__details_item"><a href="index.html" class="footer__link">Главная</a></li>
+                    <li class="footer__details_item"><a href="about.html" class="footer__link">О нас</a></li>
+                    <li class="footer__details_item"><a href="projects.html" class="footer__link">Услуги</a></li>
+                    <li class="footer__details_item"><a href="contact.html" class="footer__link">Обратная связь</a</li>
                 </ul>
             </div>
         </div>

@@ -7,7 +7,7 @@ html {
 }
 body {
     margin: 0 auto;
-    width: 1280px;
+    width: 100%;
     font-family: Monospace, Candara, Century Gothic;
 }
 button {
@@ -19,7 +19,11 @@ button {
     --black: #000000;
     --beige: #fffaf0;
     --blue: #313D74;
-    --gray: #f0f0f0;
+    --light-gray: #f0f0f0;
+    --medium-gray: #ddd;
+    --dark-gray: #333;
+    --gradient: linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+    linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
 }
 a {
     text-decoration: none;
@@ -30,10 +34,12 @@ a {
     display: flex;
     justify-content: center;
 }
-
+.welcome__container, .britain__container, .lesson__container {
+    width: 1280px;
+}
 .welcome__container {
     margin: 0 auto;
-    padding: 0 0 30px 30px;
+    padding: 8px 0 30px 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -68,8 +74,7 @@ a {
     padding: 15px 45px;
     width: fit-content;
     border: none;
-    background: linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
-    linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
+    background: var(--gradient);
     font-family: Monospace, Candara, Century Gothic;
 }
 .welcome__button:hover{
@@ -110,17 +115,18 @@ a {
     transition: border 0.3s;
 }
 .britain__pic:hover {
-    border: 2px solid rgb(210, 6, 12);
+    border: 2px solid var(--red);
 }
 
 .lesson__container {
     padding: 60px;
+    margin: 0 auto;
 }
 .lesson__window {
     text-align: center;
     padding: 36px;
     border-radius: 12px;
-    background-color: var(--gray);
+    background-color: var(--light-gray);
     width: 600px;
     display: flex;
     flex-direction: column;
