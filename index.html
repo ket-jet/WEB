@@ -25,6 +25,7 @@
             </nav>
         </div>
     </header>
+    <!-- Основная часть главной страницы, состоит из 3 частей: главный экран, галерея с подсказками и форма с ссылкой на запись -->
     <main>
         <section class="welcome">
             <div class="welcome__container">
@@ -36,11 +37,13 @@
                         как для детей, так и для взрослых!
                     </p>
                     <p class="welcome__sale">Первое занятие - <b>БЕСПЛАТНО!</b></p>
+                    <!--Ссылка на место в текущем документе (форма в самом низу)-->
                     <button class="welcome__button" onclick="window.location.href='#lesson'">Записаться</button>
                 </div>
                 <img src="assets/img/welcome-pic.jpg" alt="welcome-banner" class="welcome__pic">
             </div>
         </section>
+        <!--Галерея, при наведении курсора с помощью свойства title появляется название фото -->
         <section class="britain">
             <div class="britain__container">
                 <h2 class="britain__h2">ПОГРУЗИСЬ В БРИТАНСКИЙ МИР</h2>
@@ -54,12 +57,13 @@
                 </div>
             </div>
         </section>
-        <section class="lesson" id="lesson">
+        <section class="lesson" id="lesson"> <!--id здесь играет роль якоря -->
             <div class="lesson__container">
                 <div class="lesson__window">
                     <h3 class="lesson__window_h3">ХОТИТЕ ЗАПИСАТЬСЯ НА ЗАНЯТИЕ?</h3>
                     <p class="lesson__window_info">Оставьте заявку и мы обязательно с Вами свяжемся!</p>
                     <img src="assets/img/lesson-cat.png" alt="british-cat" class="lesson__window_pic">
+                    <!--Ссылка на другую страницу с формой записи-->
                     <button class="welcome__button" onclick="window.open('projects.html', '_blank')">Записаться</button>
                 </div>
             </div>
