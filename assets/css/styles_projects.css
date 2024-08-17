@@ -1,0 +1,152 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: Monospace, Candara, Century Gothic;
+}
+button {
+    cursor: pointer;
+}
+:root {
+    --red: #d2060c;
+    --white: #fff;
+    --black: #000000;
+    --beige: #fffaf0;
+    --blue: #313D74;
+    --light-gray: #f0f0f0;
+    --medium-gray: #ddd;
+    --dark-gray: #333;
+    --orange: #e8491d;
+    --gradient: linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+    linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
+}
+a {
+    text-decoration: none;
+}
+
+.stats__container, .courses__container, .discount__container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+.stats, .discount {
+    background-color: var(--orange);
+}
+.stats__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 40px;
+}
+.stats__h1 {
+    font-size: 34px;
+    color: var(--white);
+    margin: 0;
+}
+.stats__p {
+    font-size: 22px;
+    color: var(--white);
+    margin: 0;
+}
+.stats__tables {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    column-gap: 40px;
+}
+.stats__table {
+    width: 100px;
+    border-collapse: collapse;
+    color: black;
+    background-color: white;
+}
+.stats__table th, .stats__table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
+}
+.stats__table th {
+    font-size: 22px;
+    margin: 0;
+}
+.stats__table td {
+    font-size: 34px;
+    font-weight: 800;
+    padding: 30px 20px;
+}
+
+.courses__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.courses__h2 {
+    margin: 0 auto;
+    font-size: 34px;
+}
+.courses__lists_box {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+.courses__list_box {
+    text-align: right;
+}
+.courses__list_h3 {
+    font-size: 26px;
+    color: var(--red);
+}
+.courses__list_box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.courses__list_box li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align:right;
+    font-size: 22px;
+}
+
+.discount__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    row-gap: 24px;
+    align-items: center;
+    color: var(--white)
+}
+.discount__h2 {
+    font-size: 34px;
+    margin: 0;
+}
+.discount__p, .discount__container ul {
+    font-size: 22px;
+    margin: 0;
+}
+.discount__button {
+    display: inline-block;
+    background: var(--gradient);
+    color: var(--white);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    font-size: 22px;
+    font-family: Monospace, Candara, Century Gothic;
+}
+
+.discount__button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}

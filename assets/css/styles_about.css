@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: Monospace, Candara, Century Gothic;
+}
+button {
+    cursor: pointer;
+}
+:root {
+    --red: #d2060c;
+    --white: #fff;
+    --black: #000000;
+    --beige: #fffaf0;
+    --blue: #313D74;
+    --light-gray: #f0f0f0;
+    --medium-gray: #ddd;
+    --dark-gray: #333;
+    --orange: #e8491d;
+    --gradient: linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+    linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
+}
+a {
+    text-decoration: none;
+}
+
+.about__container, .teachers__container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+.about__h1 {
+    font-size: 64px;
+    margin: 0 auto;
+    color: var(--red);
+}
+.about__info {
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    align-items: center;
+}
+.about__info_pic {
+    width: 488px;
+    height: 488px;
+    padding: 5px;
+    border: dashed 10px var(--blue);
+}
+.about__info_text {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.teachers {
+    background-color: var(--light-gray);
+}
+.teachers__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+.teachers__h2 {
+    color: var(--red);
+    font-size: 40px;
+    margin: 0 auto;
+}
+.teachers__gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.teachers__buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    padding-right: 30px;
+}
+.teachers__button {
+    padding: 16px;
+    background-color: var(--medium-gray);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 28px;
+    font-family: Monospace, Candara, Century Gothic;
+    transition: background 0.3s;
+}
+.teachers__button:hover {
+    border: none;
+    background: var(--gradient);
+    color: white;
+}
+.teachers__bio_info {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+.teachers__bio_pic {
+    width: 490px;
+    height: 490px;
+}
+.teachers__bio_text {
+    display:flex;
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: center;
+}
+.teachers__h3 {
+    font-size: 36px;
+    margin: 0;
+}
+.teachers__p {
+    font-size: 24px;
+    margin: 0;
+}
+

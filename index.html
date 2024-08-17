@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>English Soul</title>
+    <link rel="stylesheet" href="assets/css/styles_header.css">
+    <link rel="stylesheet" href="assets/css/styles_index.css">
+    <link rel="stylesheet" href="assets/css/styles_footer.css">
 </head>
 <body>
-
+    <div class="header__background">
+        <img src="assets/img/header-logo.png" alt="header-picture" class="header__background_pic">
+    </div>
+    <header>
+        <div class="header_wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="header__link">Главная</a></li>
+                    <li><a href="about.html" class="header__link">О нас</a></li>
+                    <li><a href="projects.html" class="header__link">Услуги</a></li>
+                    <li><a href="contact.html" class="header__link">Обратная связь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="welcome">
+            <div class="welcome__container">
+                <div class="welcome__text">
+                    <h1 class="welcome__h1">Welcome to our school!</h1>
+                    <p class="welcome__info">Языковая онлайн-школа <b><i>English Soul</i></b> предлагает Вам курсы английского.
+                        Наши занятия по английскому проходят как индивидуально, так и в мини-группах 5-7 человек.
+                        Интерактивность и вовлеченность делают уроки интересными,
+                        как для детей, так и для взрослых!
+                    </p>
+                    <p class="welcome__sale">Первое занятие - <b>БЕСПЛАТНО!</b></p>
+                    <button class="welcome__button" onclick="window.location.href='#lesson'">Записаться</button>
+                </div>
+                <img src="assets/img/welcome-pic.jpg" alt="welcome-banner" class="welcome__pic">
+            </div>
+        </section>
+        <section class="britain">
+            <div class="britain__container">
+                <h2 class="britain__h2">ПОГРУЗИСЬ В БРИТАНСКИЙ МИР</h2>
+                <div class="britain__gallery">
+                    <img src="assets/img/britain-1.png" alt="pic-1" class="britain__pic" title="Чеширский Кот">
+                    <img src="assets/img/britain-2.jpg" alt="pic-2" class="britain__pic" title="Эдинбург, Шотландия">
+                    <img src="assets/img/britain-3.jpg" alt="pic-3" class="britain__pic" title="Замок Килхурн, Шотландия">
+                    <img src="assets/img/britain-4.JPG" alt="pic-4" class="britain__pic" title="Волынка как достояние культуры">
+                    <img src="assets/img/britain-5.jpg" alt="pic-5" class="britain__pic" title="London is the capital of Great Britain">
+                    <img src="assets/img/britain-6.jpg" alt="pic-6" class="britain__pic" title="Виадук Гленфиннан, Хайленд, Шотландия">
+                </div>
+            </div>
+        </section>
+        <section class="lesson" id="lesson">
+            <div class="lesson__container">
+                <div class="lesson__window">
+                    <h3 class="lesson__window_h3">ХОТИТЕ ЗАПИСАТЬСЯ НА ЗАНЯТИЕ?</h3>
+                    <p class="lesson__window_info">Оставьте заявку и мы обязательно с Вами свяжемся!</p>
+                    <img src="assets/img/lesson-cat.png" alt="british-cat" class="lesson__window_pic">
+                    <button class="welcome__button" onclick="window.open('projects.html', '_blank')">Записаться</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <img src="assets/img/footer-logo.png" alt="footer-logo" class="footer__logo">
+            <div class="footer__info_box">
+                <h4 class="footer__heading">Контактные данные:</h4>
+                <ul class="footer__details">
+                    <li class="footer__details_item">+7 123 XXX-XX-XX</li>
+                    <li class="footer__details_item">+7 123 XXX-XX-XX</li>
+                    <li class="footer__details_item">Россия, г. Белгород</li>
+                    <li class="footer__details_item">ул. Студенческая, д. 14</li>
+                </ul>
+            </div>
+            <div class="footer__info_box">
+                <h4 class="footer__heading">Услуги:</h4>
+                <ul class="footer__details">
+                    <li class="footer__details_item"><a href="projects.html" class="footer__link">Английский для детей</a></li>
+                    <li class="footer__details_item"><a href="projects.html" class="footer__link">Английский для взрослых</a></li>
+                    <li class="footer__details_item"><a href="projects.html" class="footer__link">Деловой английский</a></li>
+                </ul>
+            </div>
+            <div class="footer__info_box">
+                <h4 class="footer__heading">Меню</h4>
+                <ul class="footer__details">
+                    <li class="footer__details_item"><a href="index.html" class="footer__link">Главная</a></li>
+                    <li class="footer__details_item"><a href="about.html" class="footer__link">О нас</a></li>
+                    <li class="footer__details_item"><a href="projects.html" class="footer__link">Услуги</a></li>
+                    <li class="footer__details_item"><a href="contact.html" class="footer__link">Обратная связь</a</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

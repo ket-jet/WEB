@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="assets/css/styles_header.css">
+    <link rel="stylesheet" href="assets/css/styles_contact.css">
+    <link rel="stylesheet" href="assets/css/styles_footer.css">
+</head>
+<body>
+    <header>
+        <div class="header_wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="header__link">Главная</a></li>
+                    <li><a href="about.html" class="header__link">О нас</a></li>
+                    <li><a href="projects.html" class="header__link">Услуги</a></li>
+                    <li><a href="contact.html" class="header__link">Обратная связь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact">
+            <div class="contact__container">
+                <img src="assets/img/form-pic.png" alt="decoration-flags" class="form__pic">
+                <div class="contact__box">
+                    <h1 class="contact__h1">Запись на занятия</h1>
+                    <form id="registration-form" class="contact__form">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Joe" required>
+                        <label for="email">e-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="joe.smith@email" required>
+                        <div class="section-group">
+                            <h3>Выберите направление(я):</h3>
+                            <label><input type="radio" name="subject" value="Английский для детей" required> Английский для детей</label>
+                            <label><input type="radio" name="subject" value="Английский для взрослых" required> Английский для взрослых</label>
+                        </div>
+                        <div class="section-group">
+                            <h3>Выберите тип занятия(ий):</h3>
+                            <label><input type="checkbox" name="class-type" value="Разговорный"> Разговорный</label>
+                            <label><input type="checkbox" name="class-type" value="Подготовка к ОГЭ"> Подготовка к ОГЭ</label>
+                            <label><input type="checkbox" name="class-type" value="Подготовка к ЕГЭ"> Подготовка к ЕГЭ</label>
+                            <label><input type="checkbox" name="class-type" value="Деловой английский"> Деловой английский</label>
+                        </div>
+                        <div class="section-group">
+                            <h3>Выберите форму занятия(ий):</h3>
+                            <label><input type="radio" name="class-form" value="Индивидуальные занятия"> Индивидуальные занятия</label>
+                            <label><input type="radio" name="class-form" value="Маленькая группа"> Маленькая группа (2-4 чел.)</label>
+                            <label><input type="radio" name="class-form" value="Большая группа"> Большая группа (5 и более чел.)</label>
+                        </div>
+                        <div class="buttons">
+                            <button type="submit">Записаться</button>
+                            <button type="reset">Сброс</button>
+                        </div>
+                    </form>
+                    <div id="confirmation" class="hidden">
+                        <p id="confirmation-message"></p>
+                        <div class="buttons">
+                            <button onclick="location.href='index.html'">Вернуться на главную страницу</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <img src="assets/img/footer-logo.png" alt="footer-logo" class="footer__logo">
+            <div class="footer__info_box">
+                <h4 class="footer__heading">Контактные данные:</h4>
+                <ul class="footer__details">
+                    <li class="footer__details_item">+7 123 XXX-XX-XX</li>
+                    <li class="footer__details_item">+7 123 XXX-XX-XX</li>
+                    <li class="footer__details_item">Россия, г. Белгород</li>
+                    <li class="footer__details_item">ул. Студенческая, д. 14</li>
+                </ul>
+            </div>
+            <div class="footer__info_box">
+                <h4 class="footer__heading">Услуги:</h4>
+                <ul class="footer__details">
+                    <li class="footer__details_item"><a href="projects.html" class="footer__link">Английский для детей</a></li>
+                    <li class="footer__details_item"><a href="projects.html" class="footer__link">Английский для взрослых</a></li>
+                    <li class="footer__details_item"><a href="projects.html" class="footer__link">Деловой английский</a></li>
+                </ul>
+            </div>
+            <div class="footer__info_box">
+                <h4 class="footer__heading">Меню</h4>
+                <ul class="footer__details">
+                    <li class="footer__details_item"><a href="index.html" class="footer__link">Главная</a></li>
+                    <li class="footer__details_item"><a href="about.html" class="footer__link">О нас</a></li>
+                    <li class="footer__details_item"><a href="projects.html" class="footer__link">Услуги</a></li>
+                    <li class="footer__details_item"><a href="contact.html" class="footer__link">Обратная связь</a</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/scripts_contact.js"></script>
+</body>
+</html>

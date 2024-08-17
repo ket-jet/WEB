@@ -1,0 +1,34 @@
+header {
+    background: var(--red);
+    height: 60px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_wrapper {
+    color: var(--white);
+    font-size: 26px;
+    margin: 0 auto;
+    width: 1280px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 90px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.header__link {
+    color: var(--white);
+}
+.header__link:hover {
+    color: var(--black);
+}
+.header__link:active {
+    color: var(--beige);
+    text-decoration: underline var(--beige);
+}
